@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/style.css')}}">
+    <title>Property</title>
+</head>
+<body>
+
+
+    <div class="nav">
+        
+            <div class="navbar">
+                <a href="/" style="text-decoration: none;">
+                <h5><i>rental property analysis</i></h5>
+                </a>
+            </div>
+        
+    </div>
+
+    <div class="main">
+        <form method="POST">
+            <div class="price">
+                    <div class="form-floating">
+                    <input type="number" class="form-control" name="salesprice" id="salesprice" placeholder='70000' value="70000" >
+                    <label for="salesprice">Sales Price</label>
+                    </div>
+            </div>
+
+
+            <div class="inputs">
+                <div class="units">
+                    <h6>Unit Breakdowns</h6>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Unit</th>
+                            <th scope="col">#Beds</th>
+                            <th scope="col">#Baths</th>
+                            <th scope="col">Rent/Mo.</th>
+                            <th scope="col">Rent Market</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                <input type="number" class="form-control" name="bed1" id="bed1" placeholder="Beds">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="bath1" id="bath1" placeholder="Baths">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="rentmo1" id="rentmo1" placeholder="Rent/mo.">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="rentmarket1" id="rentmarket1" placeholder="Rent Market">
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>
+                                <input type="number" class="form-control" name="bed2" id="bed2" placeholder="Beds">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="bath2" id="bath2" placeholder="Baths">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="rentmo2" id="rentmo2" placeholder="Rent/mo.">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="rentmarket2" id="rentmarket2" placeholder="Rent Market">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>
+                                <input type="number" class="form-control" name="bed3" id="bed3" placeholder="Beds">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="bath3" id="bath3" placeholder="Baths">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="rentmo3" id="rentmo3" placeholder="Rent/mo.">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="rentmarket3" id="rentmarket3" placeholder="Rent Market">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>
+                                <input type="number" class="form-control" name="bed4" id="bed4" placeholder="Beds">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="bath4" id="bath4" placeholder="Baths">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="rentmo4" id="rentmo4" placeholder="Rent/mo.">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="rentmarket4" id="rentmarket4" placeholder="Rent Market">
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>
+                                <input type="number" class="form-control" name="bed5" id="bed5" placeholder="Beds">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="bath5" id="bath5" placeholder="Baths">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="rentmo5" id="rentmo5" placeholder="Rent/mo.">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="rentmarket5" id="rentmarket5" placeholder="Rent Market">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>
+                                <input type="number" class="form-control" name="bed6" id="bed6" placeholder="Beds">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="bath6" id="bath6" placeholder="Baths">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="rentmo6" id="rentmo6" placeholder="Rent/mo.">
+                            </td>
+                            <td>
+                                <input type="number" class="form-control" name="rentmarket6" id="rentmarket6" placeholder="Rent Market">
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="expences">
+                    <h6>Expences</h6>
+                    <div class="input-group">
+                        <span class="input-group-text">Property Tax/Yr</span>
+                        <input type="number" name="propertytax" aria-label="propertytax" class="form-control" value="{{values.propertytax}}">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Insurance/Mo</span>
+                        <input type="number" name="insurance" aria-label="insurance" class="form-control" value="{{values.insurance}}">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Gas&Electric/Mo</span>
+                        <input type="number" name="gaselectric" aria-label="gaselectric" class="form-control" value="{{values.gaselectric}}">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Water/Mo</span>
+                        <input type="number" name="water" aria-label="water" class="form-control" value="{{values.water}}">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Sewer/Mo</span>
+                        <input type="number" name="sewer" aria-label="sewer" class="form-control" value="{{values.sewer}}">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Garbage/Mo</span>
+                        <input type="number" name="garbage" aria-label="garbage" class="form-control" value="{{values.garbage}}">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Lawn & Snow</span>
+                        <input type="number" name="lawnsnow" aria-label="lawnsnow" class="form-control" value="{{values.lawnsnow}}">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Management (%)</span>
+                        <input type="number" name="management" aria-label="management" class="form-control" value="{{values.management}}">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Vacancy (%)</span>
+                        <input type="number" name="vacancy" aria-label="vacancy" class="form-control" value="{{values.vacancy}}">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Maintenance (%)</span>
+                        <input type="number" name=maintenance aria-label="maintenance" class="form-control" value="{{values.maintenance}}">
+                    </div>
+
+
+                </div>
+
+
+                <div class="mortgage">
+                    <h6>Mortgage</h6>
+                    <div class="input-group">
+                        <span class="input-group-text">DownPayment</span>
+                        <input type="number" name="downpayment" aria-label="downpayment" class="form-control" value="{{values.downpayment}}">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Interest Rate</span>
+                        <input type="number" name="interestrate" aria-label="interestrate" class="form-control" value="{{values.interestrate}}">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Loan Term</span>
+                        <input type="number" name="loanterm" aria-label="loanterm" class="form-control" value="{{values.loanterm}}">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Closing Costs</span>
+                        <input type="number" name="closingcosts" aria-label="closingcosts" class="form-control" value="{{values.closingcosts}}">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">CALCULATE</button>
+        </form>
+    </div>
+
+            {% if request.method == "POST" %}
+                <div class="main">
+                    <div class="c-proforma">
+                        <div class="c-item">
+                            <table class="table table-hover">
+                                <thead>
+                                  <tr class="table-success">
+                                    <th scope="col">Item</th>
+                                    <th scope="col">$/Mo.</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Gross Rents</th>
+                                    <td>$ <b>{{"%.2f" | format(proformaItem.gross_rents())}}</b></td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">Property Management</th>
+                                    <td>$ {{"%.2f" | format(proformaItem.property_management())}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">Property Taxes</th>
+                                    <td>$ {{"%.2f" | format(proformaItem.property_tax())}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">Insurance</th>
+                                    <td>$ {{"%.2f" | format(proformaItem.insurance())}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">Owner-Paid Utilities</th>
+                                    <td>$ {{"%.2f" | format(proformaItem.op_utilities())}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">Vacancy Reserve</th>
+                                    <td>$ {{"%.2f" | format(proformaItem.vacancy_reserve())}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Maintenance Reserve</th>
+                                    <td>$ {{"%.2f" | format(proformaItem.maintenance_reserve())}}</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Total Operating Expences</th>
+                                    <td><b>$ {{"%.2f" | format(proformaItem.total_operating_expences())}}</td>
+                                  </tr>
+
+                                  <tr class="table-success">
+                                    <th scope="row">Monthly NOI</th>
+                                    <td><b>$ {{"%.2f" | format(proformaItem.monthly_noi())}}</td>
+                                  </tr>
+                                  <tr class="table-success">
+                                    <th scope="row">Annualized NOI</th>
+                                    <td><b>$ {{"%.2f" | format(proformaItem.annualized_noi())}}</td>
+                                  </tr>
+                                  <tr class="table-success">
+                                    <th scope="row">Capitalization Rate</th>
+                                    <td><b>% {{"%.2f" | format(proformaItem.capitalization_rate())}}</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                        </div>
+
+                        <div class="c-mortgage">
+                            <table class="table table-hover">
+                                <thead>
+                                  <tr class="table-success">
+                                    <th scope="col">Mortgage Calculator</th>
+                                    <th scope="col"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Sale Price</th>
+                                    <td>{{"$ {:,.2f}".format((currentMortgage.salesprice))}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">Loan to Value Ratio</th>
+                                    <td>% {{"%.2f" | format(currentMortgage.loan_to_value_ratio())}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">Down Payment</th>
+                                    <td>$ {{currentMortgage.down_payment() | currencyFormat}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">Closing Costs</th>
+                                    <td>{{"$ {:,.2f}".format((currentMortgage.closing_costs()))}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">Principal</th>
+                                    <td>{{"$ {:,.2f}".format((currentMortgage.principal()))}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">Interest Rate</th>
+                                    <td>% {{"%.2f" | format(currentMortgage.interest_rate())}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Term (Years)</th>
+                                    <td>{{currentMortgage.term()}}</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Monthly Mortgage</th>
+                                    <td><b>{{"$ {:,.2f}".format((currentMortgage.monthly_mortgage()))}}</td>
+                                  </tr>
+
+                                  <tr class="table-success">
+                                    <th scope="row">Monthly Net</th>
+                                    <td><b>{{"$ {:,.2f}".format((currentMortgage.monthly_net()))}}</td>
+                                  </tr>
+                                  <tr class="table-success">
+                                    <th scope="row">Annualized Net</th>
+                                    <td><b>{{"$ {:,.2f}".format((currentMortgage.annualized_net()))}}</td>
+                                  </tr>
+                                  <tr class="table-success">
+                                    <th scope="row">Annualized ROI</th>
+                                    <td><b>{{"$ {:,.2f}".format((currentMortgage.annualized_roi()))}}</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+
+            {% endif %}
+
+    
+</body>
+</html>

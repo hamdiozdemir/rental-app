@@ -1,0 +1,114 @@
+body{
+    background: azure;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFE7CC;
+    width: 100%;
+    margin: 20px 50px 10px 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+h5{
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px; 
+}
+
+.main{
+    margin: 20px 50px 10px 50px;
+}
+
+.price{
+    max-width: 300px;
+}
+
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    column-gap: 10px;
+}
+
+.units{
+    max-width: 620px;
+
+}
+
+.expences{
+    max-width: 300px;
+    min-width: 280px;
+
+}
+
+.mortgage{
+    max-width: 300px;
+    min-width: 280px;
+
+}
+
+.input-group-text{
+    width: 150px;
+}
+
+@media (max-width: 740px) {
+  .inputs {
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .units{
+    max-width: 620px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.expences{
+    max-width: 300px;
+    min-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mortgage{
+    max-width: 300px;
+    min-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+}
+
+
+
+.c-proforma{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    column-gap: 10px;
+    font-size: 12px;
+}
+
+.c-item{
+    max-width: 300px;
+    min-width: 280px;
+    line-height: 0.6;
+}
+
+.c-mortgage{
+    max-width: 300px;
+    min-width: 280px;
+    line-height: 0.6;
+}
