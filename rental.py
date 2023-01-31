@@ -1,45 +1,9 @@
 from flask import Flask, render_template, redirect, url_for, session, request, flash
 import numpy as np
-# from flask_sqlalchemy import SQLAlchemy
-# from wtforms import Form, StringField, IntegerField, validators
-# from wtforms.validators import InputRequired, ValidationError
-
 
 
 app = Flask(__name__)
 app.secret_key = "housesare2muchexpensive"
-# app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql+psycopg2://postgres:postgres@localhost:5432/rental"
-
-# db = SQLAlchemy(app)
-
-
-# ------ DATABASES -------------------
-"""
-class Expences(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    property_tax_m = db.Column(db.Integer)
-    insurance_m = db.Column(db.Integer)
-    gas_elec_m = db.Column(db.Integer)
-    water_m = db.Column(db.Integer)
-    sewer_m = db.Column(db.Integer)
-    garbage_m = db.Column(db.Integer)
-    lawn_snow = db.Column(db.Integer)
-    management = db.Column(db.Float)
-    vacancy = db.Column(db.Float)
-    maintenance = db.Column(db.Float)
-
-
-class Mortgage(db.Model):
-    downpayment = db.Column(db.Float)
-    interest_rate = db.Column(db.Float)
-    loan_term = db.Column(db.Integer)
-    cloasing_costs = db.Column(db.Integer)
-
-"""
-
-# ------------ FORMs ------------------
-
-
 
 
 # --------------- VIEWS --------------------
@@ -85,15 +49,9 @@ def index():
     }
 
 
-
-
         gross_rent = rentmo_total()
         proformaItem = CurrentProforma(gross_rent)
         currentMortgage = CurrentMortgage(request.form["salesprice"], gross_rent)
-        
-
-
-
         return render_template("index.html", values=values, proformaItem=proformaItem, currentMortgage=currentMortgage)
 
 
